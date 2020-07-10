@@ -198,12 +198,12 @@ def user_stats(df):
     print('-'*40)
 
 def display_data(df):
-	display_data=input('Would you like to see the 5 lines of raw data? Enter Yes or No\n')
+	display_data=input('Would you like to see the 10 lines of raw data? Enter Yes or No\n')
 	while display_data.title()!='No':
 		display_data.title()=='Yes'
 		print(df.head())
-		df=df.iloc[5:]
-		display_data=input('Would you like to see the 5 lines of raw data? Enter Yes or No\n')
+		df=df.iloc[10:]
+		display_data=input('Would you like to see the 10 lines of raw data? Enter Yes or No\n')
 
 def main():
     while True:
