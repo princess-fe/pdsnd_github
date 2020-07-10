@@ -147,12 +147,12 @@ def trip_duration_stats(df):
     # TO DO: display total travel time
     
     Total_Travel_Time = sum(df['Trip Duration'])
-    print('Total travel time:', Total_Travel_Time/86400, " Days")
+    print('Total travel time:{} Days'.format(Total_Travel_Time/86400))
 
     # TO DO: display mean travel time
 
     Mean_Travel_Time = df['Trip Duration'].mean()
-    print('Mean travel time:', Mean_Travel_Time/60, " Minutes")
+    print('Mean travel time:{} Minutes'.format(Mean_Travel_Time/60))
 
     print('-'*40)
 
@@ -198,12 +198,12 @@ def user_stats(df):
     print('-'*40)
 
 def display_data(df):
-	display_data=input('Would you like to see the 10 lines of raw data? Enter Yes or No\n')
+	display_data=input('Would you like to see the 5 lines of raw data? Enter Yes or No\n')
 	while display_data.title()!='No':
 		display_data.title()=='Yes'
 		print(df.head())
-		df=df.iloc[10:]
-		display_data=input('Would you like to see the 10 lines of raw data? Enter Yes or No\n')
+		df=df.iloc[5:]
+		display_data=input('Would you like to see the 5 lines of raw data? Enter Yes or No\n')
 
 def main():
     while True:
