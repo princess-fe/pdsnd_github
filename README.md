@@ -30,6 +30,11 @@ In this project, we will provide the following information :
 
 At the last section of this project, you will be able to see the first 5 lines of the data and so on.
 
+###Software required
+	You should have Python 3, NumPy, and pandas installed using Anaconda
+	A text editor, like Sublime or Atom.
+	A terminal application (Terminal on Mac and Linux or Cygwin on Windows).
+
 ### Files used
 In this project, i use data provided by Motivate, a bike share system provider for many major cities in the United States. 
 I will compare the system usage between three large cities: Chicago, New York City, and Washington DC.
